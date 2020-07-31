@@ -1,0 +1,178 @@
+@keyframes fadeIn {
+    0% {color: black;}
+    100% {color: white;}
+    }
+
+section {
+    width: 100vw;
+}
+
+h1 {
+    font-family: neue-haas-unica, "Helvetica Neue",sans-serif;
+
+    color: #444;
+
+    font-size: 15px;
+    line-height: 22px;
+}
+
+p {
+    font-family: 'Old Standard TT', serif;
+    /*color: white;*/
+}
+
+nav {
+    width: 100vw;
+    height: calc(200vh);
+    position: absolute;
+
+    pointer-events: none;
+}
+
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #444;
+}
+
+a:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+body {
+    background-color: black;
+}
+
+.brick {
+    letter-spacing: 3px;
+    padding-right: 400px;
+    transition: padding-right 1s;
+}
+
+
+.alt {
+    margin-left: 225px;
+}
+
+.blackBackground {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sticky {
+    margin: 0px;
+    position: sticky;
+    top: 20px;
+}
+
+.fullHeight {
+    height: 100vh;
+}
+
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 350px;
+    height: 100vh;
+
+    margin: 0 7vw;
+    padding: 15vh 0px 40px 0px;
+}
+
+.bumper {
+    margin-top: calc(100vh - 56px);
+}
+
+
+.bottomLine {
+    opacity: 0;
+}
+
+.fader {
+    animation: fadeIn 3s forwards;
+}
+
+@media (min-width: 600px) {
+
+    @keyframes marquee {
+        0%      {margin-left: 0px;}
+        100%    {margin-left: -465px;}
+    }
+
+    .topMarquee {
+        animation: marquee 7s linear infinite;
+        overflow: hidden;
+        mix-blend-mode: difference;
+    }
+
+    .landing {
+        height: 100vh;
+        width: 6000px;
+        padding: 40px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        animation: marquee 7s linear infinite;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    @keyframes marquee {
+        0%      {margin-left: 0px;}
+        100%    {margin-left: -267px;}
+    }
+
+    .landing {
+        height: 100vh;
+        width: 6000px;
+        padding: 20px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        animation: marquee 5s linear infinite;
+    }
+
+    .topMarquee {
+        animation: marquee 5s linear infinite;
+        overflow: hidden;
+        mix-blend-mode: difference;
+    }
+
+
+
+    .brick {
+        letter-spacing: 3px;
+        padding-right: 200px;
+
+        transition: padding-right 1s;
+    }
+
+    .alt {
+        margin-left: 130px;
+    }
+
+
+}
+
+
+
+
+
