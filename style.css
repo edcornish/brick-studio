@@ -38,7 +38,7 @@ a {
 
 a:hover {
     color: blue;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 body {
